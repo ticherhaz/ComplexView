@@ -33,7 +33,7 @@ public class ComplexView extends RelativeLayout implements View.OnClickListener,
     private float pivotY;
     private int onclickColor;
     private int color;
-    private GradientDrawable gd = new GradientDrawable();
+    private final GradientDrawable gd = new GradientDrawable();
     private float rad;
     private float topRightRadius;
     private float topLeftRadius;
@@ -42,7 +42,7 @@ public class ComplexView extends RelativeLayout implements View.OnClickListener,
     private int shape;
     private View view;
     private boolean animate;
-    private int[] colors = new int[3];
+    private final int[] colors = new int[3];
     private boolean transferClick;
     private boolean clickAfterAnimation;
     private RelativeLayout main;
@@ -233,7 +233,7 @@ public class ComplexView extends RelativeLayout implements View.OnClickListener,
      *
      * @param color onclick color
      */
-    
+
     public void setOnclickColor(int color) {
         this.onclickColor = color;
     }

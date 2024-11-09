@@ -1,18 +1,16 @@
 package com.blure.complexviewexample;
 
 
+import static android.widget.RelativeLayout.CENTER_IN_PARENT;
+
 import android.app.Activity;
 import android.graphics.Color;
 import android.graphics.drawable.GradientDrawable;
 import android.os.Bundle;
-import android.view.MotionEvent;
-import android.view.View;
 import android.view.ViewGroup;
 
 import com.blure.complexview.ComplexView;
 import com.blure.complexview.Shadow;
-
-import static android.widget.RelativeLayout.CENTER_IN_PARENT;
 
 public class MainActivity extends Activity {
 

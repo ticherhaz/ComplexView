@@ -1,12 +1,12 @@
 package com.blure.complexview;
 
+import static android.graphics.drawable.GradientDrawable.Orientation;
+
 import android.graphics.Color;
 import android.graphics.drawable.Drawable;
 import android.graphics.drawable.GradientDrawable;
 import android.graphics.drawable.InsetDrawable;
 import android.graphics.drawable.LayerDrawable;
-
-import static android.graphics.drawable.GradientDrawable.Orientation;
 
 /**
  * A simple class for generating shadows for {@link ComplexView}
@@ -16,12 +16,12 @@ import static android.graphics.drawable.GradientDrawable.Orientation;
 
 public class Shadow {
     private int spread;
-    private int opacity;
-    private String color;
-    private int shape;
-    private float[] radius;
+    private final int opacity;
+    private final String color;
+    private final int shape;
+    private final float[] radius;
     private LayerDrawable shadow;
-    private Position position;
+    private final Position position;
 
     /**
      * @param spread   Strength of shadow
@@ -69,7 +69,6 @@ public class Shadow {
             }
             drawable.setCornerRadii(radius);
             gradientDrawables[i] = new InsetDrawable(drawable, padding, padding, padding, padding);
-            ;
             if (step == spread / 14) {
                 ++hex;
                 step = 0;
@@ -134,6 +133,6 @@ public class Shadow {
         /**
          * Positions the shadow to the bottom
          */
-        BOTTOM;
+        BOTTOM
     }
 }
