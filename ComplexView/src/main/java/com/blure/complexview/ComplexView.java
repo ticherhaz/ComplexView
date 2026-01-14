@@ -19,6 +19,8 @@ import android.widget.RelativeLayout;
  */
 
 public class ComplexView extends RelativeLayout implements View.OnClickListener, Animation.AnimationListener {
+    private final GradientDrawable gd = new GradientDrawable();
+    private final int[] colors = new int[3];
     private float amplitude;
     private OnClickListener pClick;
     private float frequency;
@@ -33,7 +35,6 @@ public class ComplexView extends RelativeLayout implements View.OnClickListener,
     private float pivotY;
     private int onclickColor;
     private int color;
-    private final GradientDrawable gd = new GradientDrawable();
     private float rad;
     private float topRightRadius;
     private float topLeftRadius;
@@ -42,7 +43,6 @@ public class ComplexView extends RelativeLayout implements View.OnClickListener,
     private int shape;
     private View view;
     private boolean animate;
-    private final int[] colors = new int[3];
     private boolean transferClick;
     private boolean clickAfterAnimation;
     private RelativeLayout main;
@@ -432,8 +432,7 @@ public class ComplexView extends RelativeLayout implements View.OnClickListener,
             return;
         }
         ViewParent parent = getParent();
-        if (parent instanceof ComplexView && transferClick) {
-            ComplexView complexView = (ComplexView) parent;
+        if (parent instanceof ComplexView complexView && transferClick) {
             complexView.fromChild = true;
             complexView.onClick(complexView);
         }

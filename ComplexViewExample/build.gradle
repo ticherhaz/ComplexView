@@ -1,15 +1,15 @@
 apply plugin: 'com.android.application'
 
 android {
-    compileSdk 35
+    compileSdk = 36
     namespace "com.blure.complexviewexample"
     defaultConfig {
         applicationId "com.blure.complexviewexample"
         minSdkVersion 23
-        targetSdkVersion 35
+        targetSdkVersion 36
 
-        versionCode 152
-        versionName "1.5.2"
+        versionCode 153
+        versionName "1.5.3"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
     }
     buildTypes {

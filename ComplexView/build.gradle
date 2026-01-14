@@ -1,14 +1,12 @@
 apply plugin: 'com.android.library'
 
 android {
-    compileSdk 35
+    compileSdk = 36
     namespace "com.blure.complexview"
 
     defaultConfig {
         minSdkVersion 23
-        targetSdkVersion 35
-        versionCode 152
-        versionName "1.5.2"
+        targetSdkVersion 36
     }
 
     compileOptions {
@@ -18,11 +16,9 @@ android {
 
     buildTypes {
         debug {
-            debuggable true
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
         release {
-            debuggable false
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
     }

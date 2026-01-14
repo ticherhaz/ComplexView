@@ -15,13 +15,13 @@ import android.graphics.drawable.LayerDrawable;
  */
 
 public class Shadow {
-    private int spread;
     private final int opacity;
     private final String color;
     private final int shape;
     private final float[] radius;
-    private LayerDrawable shadow;
     private final Position position;
+    private int spread;
+    private LayerDrawable shadow;
 
     /**
      * @param spread   Strength of shadow
