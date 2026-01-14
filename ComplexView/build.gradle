@@ -5,7 +5,7 @@ android {
     namespace "com.blure.complexview"
 
     defaultConfig {
-        minSdkVersion 23
+        minSdkVersion 21
         targetSdkVersion 36
     }
 

@@ -5,11 +5,11 @@ android {
     namespace "com.blure.complexviewexample"
     defaultConfig {
         applicationId "com.blure.complexviewexample"
-        minSdkVersion 23
+        minSdkVersion 21
         targetSdkVersion 36
 
-        versionCode 153
-        versionName "1.5.3"
+        versionCode 154
+        versionName "1.5.4"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
     }
     buildTypes {
